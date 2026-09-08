@@ -1,0 +1,66 @@
+h1, h2 {
+    text-align: center;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+
+#lista-tweets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contador {
+    margin: -10px 0 10px;
+    text-align: right;
+    color: #666;
+    font-size: 0.85em;
+}
+
+.contador.limite {
+    color: red;
+    font-weight: bold;
+}
+
+.tweet {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 34px;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+.tweet span {
+    max-height: 42px;
+    overflow-y: auto;
+    line-height: 1.4;
+}
+
+.borrar-tweet,
+.borrar-tweet:hover {
+    width: 34px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
